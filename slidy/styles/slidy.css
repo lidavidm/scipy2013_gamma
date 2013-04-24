@@ -8,6 +8,12 @@
    http://www.w3.org/Consortium/Legal/copyright-software
 */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600);
+/* Colors
+#3B5526
+#81B953
+#96C56F
+#777
+#EEE */
 
 body
 {
@@ -18,7 +24,7 @@ body
   color: black;
   background-color: white;
   font-family: "Open Sans", sans-serif;
-  font-size: 14pt;
+  font-size: 32pt;
 }
 
 div.toolbar {
@@ -51,6 +57,7 @@ div.initial_prompt {
 
 div.initial_prompt p.help {
   text-align: center;
+  display: none;
 }
 
 div.initial_prompt p.close {
@@ -101,6 +108,9 @@ div.slide {
   right: 0;
   line-height: 120%;
   background-color: transparent;
+  background-color: #3B5526;
+  color: #FFF;
+  font-size: 1.25em;
 }
 
 div.background {
@@ -118,7 +128,16 @@ div.slide.titlepage {
 
 div.slide.titlepage h1 {
   padding-top: 10%;
-  margin-right: 0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+div.slide.titlepage h1 img {
+  float: left;
+  margin-right: 0.5em;
+  height: 3em;
 }
 
 div.slide h1 {
@@ -164,6 +183,8 @@ div.toc-heading {
 
 img {
   image-rendering: optimize-quality;
+  margin: auto;
+  display: block;
 }
 
 pre {
@@ -179,9 +200,9 @@ pre {
  border-top-width: thin;
  border-right-width: thin;
  border-bottom-width: thin;
- border-color: #95ABD0;
- color: #00428C;
- background-color: #E4E5E7;
+ border-color: #81B953;
+ color: #3B5526;
+ background-color: #FFF;
 }
 
 li pre { margin-left: 0; }
@@ -213,8 +234,8 @@ ul ul { list-style-type: disc; }
 ul ul ul { list-style-type: circle; }
 ul ul ul ul { list-style-type: disc; }
 li { margin-left: 0.5em; margin-top: 0.5em; }
-li li { font-size: 85%; font-style: italic }
-li li li { font-size: 85%; font-style: normal }
+li li { font-size: 90%; }
+li li li { font-size: 90%; }
 
 div dt
 {
@@ -272,15 +293,13 @@ ol li {
 }
 
 li ul li { 
-  font-size: 85%; 
-  font-style: italic;
+  font-size: 90%; 
   list-style-type: disc;
   background: transparent;
   padding: 0 0 0 0;
 }
 li li ul li { 
-  font-size: 85%; 
-  font-style: normal;
+  font-size: 90%; 
   list-style-type: circle;
   background: transparent;
   padding: 0 0 0 0;
@@ -400,8 +419,17 @@ div.initial_prompt { display: none; visibility: hidden }
   div.toolbar { display: none; visibility: hidden; }
   div.slidy_toc { display: none; visibility: hidden; }
   div.background { display: none; visibility: hidden; }
-  div.slide { page-break-before: always }
+  div.slide {
+    page-break-before: always;
+    background: #FFF;
+    color: #000;
+    font-size: 18pt;
+  }
   /* :first-child isn't reliable for print media */
   div.slide.first-slide { page-break-before: avoid }
 }
 
+#sympy-gamma {
+  background: #555;
+  overflow: hidden;
+}
