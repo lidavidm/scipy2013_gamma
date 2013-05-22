@@ -13,6 +13,8 @@
     - Resurrected Gamma
     - Misc. improvements for Live
 
+- Contributing experiences
+
 # SymPy Live
 
 http://live.sympy.org
@@ -37,27 +39,20 @@ __http://goo.gl/ijLD4__
     - Explore nearly all of SymPy's features online
     - http://docs.sympy.org/0.7.2/tutorial.html
 
-<!--
-
-What I could say, using SymPy tutorial/talk as an example
-
-- What if the user wants to play with these examples?
-
-1. Copy-and-paste into a terminal. This is annoying. She would have to
-   delete all the >>> blocks manually, get rid of example output, etc...
-
-   We could improve this by adding a button to do this for her, or...
-2. Leverage SymPy Live. Click a button, and the terminal appears in the
-   browser.
-
--->
-
 - Other projects can benefit too!
     - Sphinx extension
 
 ---
 
-![Sphinx Extension](images/sphinx.png)
+[![Sphinx Extension](images/sphinx.png)](http://live.sympy.org)
+
+---
+
+## Case Study: Sphinx Extension
+
+- Built on a SciPy 2011 presentation!
+- Sphinx extension adds script/link tags to docs
+- Live server provides these resources
 
 ---
 
@@ -81,17 +76,14 @@ What I could say, using SymPy tutorial/talk as an example
     - If any are unpicklable, store the statement itself
     - Else just pickle and store the globals
 
-(There are some other complications relating to `exec`-vs-`eval` and so on)
-
 ---
 
 - Problems
     - What if (an expression involving) `_` created an unpicklable?
-
-        (I'm not sure, either.)
-
+    - Function definitions
 - Improvements?
-    - Retain shell session when navigating between pages
+    - Retain session when navigating between pages (Sphinx)
+    - Fixing bugs!
 
 # SymPy Gamma
 
@@ -110,13 +102,44 @@ http://www.sympygamma.com
 ---
 
 - Integrals: get steps, solution
+
+<div class="horizontal">
+
+[![](images/qr_gamma_integral.png)](http://www.sympygamma.com/input/?i=integrate%28exp%28x%29%2F%281+%2B+exp%282x%29%29%29)
+
+![](images/example_gamma_integral.png)
+
+</div>
+
+---
+
 - Trigonometric expression: alternate forms
-- Most expressions: 2D graph
+
+[![](images/qr_gamma_trig.png)](http://www.sympygamma.com/input/?i=sin%282x%29+%2F+%281+-+cos%5E2%282x%29%29)
+
+---
+
+- Most expressions: 2D graph. Here: $$ sin(2 sin(2 sin(x))) $$
+
+Can export to SVG, used here; no link provided (it's rather slow).
+
+<img src="images/example_gamma_graph.svg" id="gamma-graph" />
+
+---
+
 - Numerical expressions: floating-point approximations
-- Function: documentation
-- Purpose
-    - Showcase what SymPy can do
-    - Because Wolfram has it
+
+---
+
+<!--
+
+Demonstrate:
+
+- Various result types
+    - (put inputs here)
+- Graphing (zoom, pan, export, resize)
+
+-->
 
 ---
 
@@ -129,12 +152,5 @@ http://www.sympygamma.com
 ---
 
 - Quite simple
-- Most interesting features implemented in JavaScript:
+- Interesting features implemented in JavaScript:
     - 2D plotting with SVG
-
----
-
-## ToDos
-
-- Some way to unit test
-- More result types!
