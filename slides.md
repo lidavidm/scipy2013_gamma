@@ -50,7 +50,7 @@ __http://goo.gl/ijLD4__
 
 ## Case Study: Sphinx Extension
 
-- Built on a SciPy 2011 presentation!
+- Built on a SciPy 2011 sprint
 - Sphinx extension adds script/link tags to docs
 - Live server provides these resources
 
@@ -131,18 +131,6 @@ Can export to SVG, used here; no link provided (it's rather slow).
 
 ---
 
-<!--
-
-Demonstrate:
-
-- Various result types
-    - (put inputs here)
-- Graphing (zoom, pan, export, resize)
-
--->
-
----
-
 ## Implementation
 
 #. Determine which "cards" to use based on the type of the input
@@ -154,3 +142,37 @@ Demonstrate:
 - Quite simple
 - Interesting features implemented in JavaScript:
     - 2D plotting with SVG
+
+# Thanks To
+
+- SymPy team, in particular, Aaron Meurer and Ondrej Certik
+- Other SymPy Live authors:
+    - Ondřej Čertík
+    - David Roberts
+    - Leonel Hernandez
+    - Mateusz Paprocki
+    - Vinzent Steinberg
+    - Aaron Meurer
+
+---
+
+- (continued)
+    - Alex Houlton
+    - Stefan Krastanov
+    - Kshitij Aranke
+    - Tristan Hume
+    - Grzegorz Świrski
+    - areke
+    - Mateusz Kmiecik
+    - Steve Anton
+
+---
+
+- Other SymPy Gamma authors:
+    - Ondrej Certik
+    - André Luiz Guimarães de Souza Leite
+    - Aaron Meurer
+
+- https://github.com/sympy/sympy/blob/master/AUTHORS
+- https://github.com/sympy/sympy_gamma/blob/master/AUTHORS
+- https://github.com/sympy/sympy-live/blob/master/AUTHORS
