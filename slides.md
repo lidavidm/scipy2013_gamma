@@ -9,10 +9,6 @@
     - Mobile site
     - Autocompletion
 
-- 2012…
-    - Resurrected Gamma
-    - Misc. improvements for Live
-
 - Contributing experiences
 
 # SymPy Live
@@ -26,23 +22,13 @@ What's this? Try it out!
 
 __http://goo.gl/ijLD4__
 
-<!-- TODO: seems to hang Live site when visited from mobile -->
 ![Scan to evaluate](images/live_example_qr.png)
 
 ---
 
 ## Uses
 
-- Interactive documentation
-    - Play with SymPy with the docs in front of you
-- "Try-before-you-buy" (though SymPy is free)
-    - Explore nearly all of SymPy's features online
-    - http://docs.sympy.org/0.7.2/tutorial.html
-
-- Other projects can benefit too!
-    - Sphinx extension
-
----
+[Demo URL](http://goo.gl/2usJk)
 
 [![Sphinx Extension](images/sphinx.png)](http://live.sympy.org)
 
@@ -53,6 +39,7 @@ __http://goo.gl/ijLD4__
 - Built on a SciPy 2011 sprint
 - Sphinx extension adds script/link tags to docs
 - Live server provides these resources
+- Other projects can use this too!
 
 ---
 
@@ -61,8 +48,8 @@ __http://goo.gl/ijLD4__
 - Python 2.7 on Google App Engine
 - Complications
     - No persistent interpreter
-    - Can't pickle everything
     - Execution time limit
+    - Security of executing random code?
 
 ---
 
@@ -78,6 +65,12 @@ __http://goo.gl/ijLD4__
 
 ---
 
+## Security
+
+<h1 style="text-align:center;"> It's Google's problem :)</h1>
+
+---
+
 - Problems
     - What if (an expression involving) `_` created an unpicklable?
     - Function definitions
@@ -89,7 +82,7 @@ __http://goo.gl/ijLD4__
 
 http://www.sympygamma.com
 
-![SymPy Gamma](images/gamma.png)
+[![SymPy Gamma](images/gamma.png)](http://www.sympygamma.com)
 
 ---
 
@@ -127,21 +120,11 @@ Can export to SVG, used here; no link provided (it's rather slow).
 
 ---
 
-- Numerical expressions: floating-point approximations
-
----
-
 ## Implementation
 
 #. Determine which "cards" to use based on the type of the input
 #. Return these (with some HTML scaffolding) to the browser
 #. Browser loads the result from the server via JavaScript
-
----
-
-- Quite simple
-- Interesting features implemented in JavaScript:
-    - 2D plotting with SVG
 
 # Thanks To
 

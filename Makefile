@@ -3,3 +3,6 @@ html:
 
 pdf:
 	pandoc -t beamer slides.md -o slides.pdf
+
+notes:
+	pandoc -s notes.md -o notes.html
